@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
+  </head>
+  <body>
+    <nav-canvas brandName="StoryApp"></nav-canvas>
+
+    <main>
+      <div class="main-content">
+        <div class="container mt-5">
+          <div class="col-lg-6 mx-auto">
+            <h3 class="mb-3">Timeline</h3>
+
+            <div class="data-field">
+              <div class="card mb-3">
+                <div
+                  class="card-header d-flex justify-content-between align-items-center"
+                >
+                  <div class="d-flex align-items-center placeholder-glow">
+                    <div
+                      class="me-2 rounded-circle placeholder"
+                      style="width: 50px; height: 50px"
+                    ></div>
+                    <a href="#" class="placeholder text-dark"
+                      >Lorem ipsum dolor</a
+                    >
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="btn border"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      ...
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" id="linkCopyButton" href="#">
+                          <i class="bi bi-link"></i>
+                          <span>Copy Link</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body placeholder-glow">
+                  <div class="text-center">
+                    <div
+                      class="placeholder mb-2 w-100"
+                      style="min-height: 250px"
+                    ></div>
+                  </div>
+                  <p class="createdAt fw-bold mb-2 placeholder">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="description mb-1 placeholder">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt saepe natus doloribus a voluptate perferendis, enim
+                    ratione dolorem, dicta modi quod repellat quidem voluptates
+                    fugit illo quia esse iste placeat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

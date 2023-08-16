@@ -1,0 +1,66 @@
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin hover-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.mynav {
+  .btn-canvas {
+    z-index: 2;
+
+    @include hover-pointer();
+  }
+
+  .offcanvas {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, 'md')) {
+  .mynav {
+    .offcanvas {
+      width: 70%;
+    }
+  }
+}
+
+// ABOUT
+
+.carousel-item {
+  position: relative;
+
+  &:hover .carousel-layout {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .carousel-title {
+      transform: scale(1);
+    }
+  }
+  .carousel-layout {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .carousel-title {
+      transition: 0.3s;
+      transform: scale(0);
+    }
+  }
+}
